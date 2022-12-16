@@ -42,21 +42,21 @@
                 <div class="entry">
                 <label for="phone" class="open_fields">Phone Number</label><br>
                 <div class="these_inputs">
-                <input type="text" id="phone" class="first_field" name="phone"><br>
+                <input type="text" id="phone" class="first_field" name="phone" placeholder="+1 (555)-555-5555"><br>
             </div>
                 </div>
 
                 <div class="entry">
                 <label for="address" class="open_fields">Street Address</label><br>
                 <div class="these_inputs">
-                <input type="text" id="address" class="first_field" name="address"><br>
+                <input type="text" id="address" class="first_field" name="address" placeholder="101 Hampton Ln."><br>
             </div>
                 </div>
 
                 <div class="entry">
                 <label for="city" class="open_fields">City</label><br>
                 <div class="these_inputs">
-                <input type="text" id="city" class="first_field" name="city"><br>
+                <input type="text" id="city" class="first_field" name="city" placeholder="New York"><br>
             </div>
                 </div>
 
@@ -133,7 +133,7 @@
             <div class="entry">
                 <label for="zip" class="open_fields">Zip Code</label><br><br>
                 <div class="these_inputs" id="zip_entry">
-                <input type="number" name="zip" id="zip" class="first_field">
+                <input type="number" name="zip" id="zip" class="first_field" placeholder="10001">
             </div>
         </div>
             </fieldset>
@@ -145,19 +145,19 @@
                 <p>Select the newsletters you would like to receive</p>
                 <div class="second_field">
                 <div class="select">
-                <input type="checkbox" name="html" id="html">
+                <input type="checkbox" name="check" id="html">
                 <label for="html">HTML News</label>
                 <br>
             </div>
 
                 <div class="select">
-                <input type="checkbox" name="css" id="css">
+                <input type="checkbox" name="check" id="css">
                 <label for="css">CSS News</label>
                 <br>
             </div>
 
                 <div class="select">
-                <input type="checkbox" name="javascript" id="javascript">
+                <input type="checkbox" name="check" id="javascript">
                 <label for="javascript">Javascript News</label>
                 <br>
                 </div>
@@ -177,8 +177,8 @@
                 </div>
             </div>
                 
-                <p>Other topics you'd like to hear about</p>
-                <textarea name="topics" id="topics"></textarea>
+                <label for="topics" id="other">Other topics you'd like to hear about</label> 
+                <textarea name="topics" id="topics" placeholder="PHP, Ruby on Rails, Python..."></textarea>
                 <br>
                 <button type="submit">Sign Up</button>
             </fieldset>
