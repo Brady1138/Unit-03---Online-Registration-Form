@@ -4,13 +4,28 @@ input, select, textarea {
     outline: none;
     background: none;
   }
+
+input, 
+select, 
+button, 
+textarea {
+    border-radius: 5px;
+}
+
 /*-----browser select reset-----*/
 
-
+* {
+    /* border: 1px solid red; */
+}
 body {
-    margin: 0;
+    font-family: 'Merriweather', serif;
+    color: rgb(107, 109, 113);
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
     padding: 0;
     text-align: center;
+    align-items: center;
 }
 
 header {
@@ -23,36 +38,45 @@ header {
     background-color: rgb(45,57,69);
 }
 
+main>p {
+    width: 95%;
+    height: auto;
+    margin: -9px auto 50px auto;
+}
+
 h1 {
-    font-size: .75em;
+    font-size: 1em;
     padding: 10px;
+    font-weight: bold;
 }
 
 h2 {
-    font-size: 1em;
-    margin-top: 8%;
+    font-size: 1.2em;
+    margin-top: 75px;
 }
 
-h3 {
-    margin: 0;
+legend {
+    font-weight: bold;
+}
+
+h2,
+legend {
+    color: black;
 }
 
 form {
-    max-width: 500px;
-    display: block;
+    width: 95%;
     align-items: center;
-    width: 90%;
-    margin: auto;
+    margin: 0 auto;
 }
 
 fieldset {
     border: none;
-    margin: 10px 0;
+    margin: 30px 0;
     padding: 20px 0;
-    border-top: 2px solid black;
 }
 
-fieldset p, h3 {
+fieldset p, legend {
     text-align: left;
 }
 
@@ -68,14 +92,19 @@ button {
     border: none;
     color: white;
     background-color: rgb(78,187,181);
+    margin-top: 20px;
 }
 
 button:hover {
     background-color: rgb(66, 156, 151);
 }
 
+footer {
+    font-style: italic;
+}
 /*-----field selectors-----*/
 .first_field, select {
+    color: rgb(154, 158, 173);
     width: 100%;
     height: 35px;
     background-color: #eff0f1;
@@ -85,7 +114,14 @@ button:hover {
 .first_field:focus {
     box-sizing: border-box;
     border: 2px solid rgb(86, 80, 80);
-    border-radius: 5px;
+}
+
+.first_field::placeholder {
+    color: rgb(154, 158, 173);
+    font-size: .85em;
+    text-align: right;
+    padding-right: 8px;
+    font-style: italic;
 }
 
 .second_field {
@@ -95,4 +131,75 @@ button:hover {
 .open_fields {
     float: left;
     padding-top: 15px;
+    padding-bottom: 10px
+}
+
+.spacer_field {
+    width: 95%;
+    height: 5px;
+    margin: -5px auto;
+    background-color: black;
+}
+
+.select {
+    padding-bottom: 10px;
+}
+
+#zip {
+    width: 50%;
+    /* float: left; */
+}
+
+#zip_entry {
+    width: 100%;
+}
+
+#zip_entry input {
+    float: left;
+    margin-left: -70px;
+}
+
+.spacer_line {
+    background-color: black;
+    width: 100%;
+    height: 2px;
+    margin-top: 10px;
+}
+
+@media (min-width: 768px) {
+    .these_inputs {
+        width: 100%;
+        align-items: center;
+        padding-top: 5px;
+    }
+    
+    .entry {
+        width: 100%;
+        height: auto;
+        display: flex;
+        margin-bottom: 10px;
+    }
+    .first_field, select {
+        width: 100%;
+        height: 40px;
+        padding: 0;
+        margin: 0 auto;
+    }
+    
+    .open_fields  {
+        width: 200px;
+        text-align: left;
+    }
+
+   #zip {
+        width: 30%;
+    }
+
+    #zip_entry input {
+        margin-left: 0;
+    }
+
+    h2 {
+        margin-top: 120px;
+    }
 }

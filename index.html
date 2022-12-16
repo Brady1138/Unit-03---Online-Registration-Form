@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Online Form</title>
 </head>
@@ -14,27 +19,50 @@
     <main>
         <h2>Signup for our newsletter</h2>
         <p>Get the latest news on how your code is doing right in your inbox.</p>
+        <div class="spacer_field"></div>
         <form action="index.html" method="post">
+            <div class="spacer_line"></div>
             <fieldset>
-                <h3>Contact Information</h3><br>
+                <legend>Contact Information</legend><br>
             <br>
-
-                <label for="name" class="open_fields">Full Name</label>
+                <div class="entry">
+                <label for="name" class="open_fields">Full Name</label><br>
+                <div class="these_inputs">
                 <input type="text" id="name" class="first_field" name="name" placeholder="Required"><br>
+                </div>
+            </div>
 
-                <label for="email" class="open_fields">Email Address</label>
+                <div class="entry">
+                <label for="email" class="open_fields">Email Address</label><br>
+                <div class="these_inputs">
                 <input type="email" id="email" class="first_field" name="email" placeholder="Required"><br>
+            </div>
+                </div>
 
-                <label for="phone" class="open_fields">Phone Number</label>
+                <div class="entry">
+                <label for="phone" class="open_fields">Phone Number</label><br>
+                <div class="these_inputs">
                 <input type="text" id="phone" class="first_field" name="phone"><br>
+            </div>
+                </div>
 
-                <label for="address" class="open_fields">Street Address</label>
+                <div class="entry">
+                <label for="address" class="open_fields">Street Address</label><br>
+                <div class="these_inputs">
                 <input type="text" id="address" class="first_field" name="address"><br>
+            </div>
+                </div>
 
-                <label for="city" class="open_fields">City</label>
+                <div class="entry">
+                <label for="city" class="open_fields">City</label><br>
+                <div class="these_inputs">
                 <input type="text" id="city" class="first_field" name="city"><br>
+            </div>
+                </div>
 
-                <label for="state" class="open_fields">State</label>
+                <div class="entry">
+                <label for="state" class="open_fields">State</label><br>
+                <div class="these_inputs">
                 <select name="state" id="state" class="first_field">
                     <option value="">Choose State/Territory</option>
                     <optgroup label="States">
@@ -99,33 +127,56 @@
                         <option value="Virgin Islands">Virgin Islands</option>
                     </optgroup>
                 </select><br>
+            </div>
+            </div>
 
-                <label for="zip" class="open_fields">Zip Code</label>
+            <div class="entry">
+                <label for="zip" class="open_fields">Zip Code</label><br><br>
+                <div class="these_inputs" id="zip_entry">
                 <input type="number" name="zip" id="zip" class="first_field">
+            </div>
+        </div>
             </fieldset>
+
+            <div class="spacer_line"></div>
+
             <fieldset>
-                <h3>Newsletter</h3>
+                <legend>Newsletter</legend>
                 <p>Select the newsletters you would like to receive</p>
                 <div class="second_field">
+                <div class="select">
                 <input type="checkbox" name="html" id="html">
                 <label for="html">HTML News</label>
                 <br>
+            </div>
+
+                <div class="select">
                 <input type="checkbox" name="css" id="css">
                 <label for="css">CSS News</label>
                 <br>
+            </div>
+
+                <div class="select">
                 <input type="checkbox" name="javascript" id="javascript">
                 <label for="javascript">Javascript News</label>
                 <br>
                 </div>
+            </div>
 
                 <p>Newsletter Format</p>
                 <div class="second_field">
+                <div class="select">
                 <input type="radio" id="code" name="format">
                 <label for="code">HTML</label>
+                </div>
                 <br>
+
+                <div class="select">
                 <input type="radio" id="text" name="format">
                 <label for="text">Plain Text</label>
                 </div>
+            </div>
+                
                 <p>Other topics you'd like to hear about</p>
                 <textarea name="topics" id="topics"></textarea>
                 <br>
