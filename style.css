@@ -118,6 +118,7 @@ footer {
 .first_field:focus {
     box-sizing: border-box;
     border: 2px solid rgb(86, 80, 80);
+    transition: .2s;
 }
 
 .first_field::placeholder {
