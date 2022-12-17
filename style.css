@@ -115,7 +115,7 @@ footer {
     border: none;
  }
 
-.first_field:focus {
+.first_field:focus, textarea:focus {
     box-sizing: border-box;
     border: 2px solid rgb(86, 80, 80);
     transition: .2s;
