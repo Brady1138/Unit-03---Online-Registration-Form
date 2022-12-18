@@ -13,10 +13,6 @@ textarea {
 }
 
 /*-----browser select reset-----*/
-
-* {
-    /* border: 1px solid red; */
-}
 body {
     font-family: 'Merriweather', serif;
     color: rgb(107, 109, 113);
